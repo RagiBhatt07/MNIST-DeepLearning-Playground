@@ -28,3 +28,12 @@ $$
     \hat{W}, \hat{b} = \operatorname{argmin}_{W, b} \sum_{x, y} - \log p(y | x)
 $$
 Although this is a linear model, it classifies raw data without any manual feature extraction step.
+
+
+For lab2:
+In the first lab exercise, we built a simple linear classifier.
+Although it can give reasonable results on the MNIST dataset (~92.5% of accuracy), deeper neural networks can achieve more the 99% accuracy.
+However, it can quickly become really impracical to explicitly code forward and backward passes.
+Hence, it is useful to rely on an auto-diff library where we specify the forward pass once, and the backward pass is automatically deduced from the computational graph structure.
+
+In this lab exercise, we will build a small and simple auto-diff lib that mimics the autograd mechanism from Pytorch (of course, we will simplify a lot!)
